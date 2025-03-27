@@ -110,6 +110,7 @@ def process_profile(profile_config: dict, profile_name: str, dms: DvelopDmsPy, t
                               alteration_msg=profile_config.get("alt_message", "Changed by dms_butler"),
                               state_change=False)
         ch_count += 1
+        logger.info(f"Changed doc {doc.id_} with profile {profile_name}")
         print(f"Changed doc {doc.id_} ({ch_count} / {len(docs)})")
     print(f"Matched doc count: {doc_count}")
 
