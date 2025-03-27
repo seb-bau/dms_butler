@@ -114,6 +114,10 @@ def process_profile(profile_config: dict, profile_name: str, dms: DvelopDmsPy, t
         ch_count += 1
         logger.info(f"Changed doc {doc.id_} with profile {profile_name}")
         print(f"Changed doc {doc.id_} ({ch_count} / {len(docs)})")
+        try:
+            os.remove(file_path)
+        except Exception as e:
+            logger.error(f"Doc {doc.id_}: Cannot remove file {file_path}: {str(e)}")
     print(f"Matched doc count: {doc_count}")
 
 
