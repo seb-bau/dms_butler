@@ -48,6 +48,8 @@ def get_file_info(filepath: str) -> dict | None:
 
 def process_profile(profile_config: dict, profile_name: str, dms: DvelopDmsPy, temp_folder: str, whatif: bool = False,
                     verbose: bool = False):
+    if whatif:
+        logger.info(f"Profile {profile_name}: PING")
     print(f"Profile: {profile_name}")
     allowed_filetypes_raw = profile_config.get("allowed_filetypes")
     cats_raw = profile_config.get("categories").split("|") if profile_config.get("categories") else None
