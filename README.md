@@ -3,14 +3,14 @@ Mit dieser Anwendung können Dokumente im d.velop-DMS gesucht und anhand bestimm
 
 ### Beispiel
 Suche alle Dokumente der Kategorie "Mietvertrag", die die Begriffe "Mietvertrag" und "Unterschrift", 
-jedoch nicht den Begriff "Test" enthalten. Die Dateien dürfen minimal 20 und maximal 20 Seiten haben. Setze bei
+jedoch nicht den Begriff "Test" enthalten. Die Dateien dürfen minimal 10 und maximal 20 Seiten haben. Setze bei
 zutreffenden Dokumenten die Eigenschaft "Teilen mit Mieterportal" auf "Ja".
 
 ### Disclaimer
 **Bitte benutzen Sie diese Anwendung nur, wenn Sie sicher sind, was Sie erreichen möchten. Testen Sie auf keinen Fall in einer produktiven Umgebung. Ich übernehme keine Haftung für ungewollte Massenänderungen am DMS, die durch Fehler in der Anwendung oder Konfigurationsfehler entstanden sind.
   Sollten Sie Unterstützung benötigen, schreiben Sie mir bitte eine Nachricht oder erstellen Sie einen Eintrag in den Issues.**
 
-### Installation unter Linux (Windows ähnlich)
+### Installation
 * Repository klonen
 ``` git clone https://github.com/seb-bau/dms_butler.git ```
 * Voraussetzungen installieren
